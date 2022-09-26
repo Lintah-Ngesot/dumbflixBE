@@ -33,7 +33,7 @@ func main() {
 	r.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "application/json")
 		w.WriteHeader(http.StatusOK)
-		json.NewEncoder(w).Encode("Hello World")
+		json.NewEncoder(w).Encode("Hello Tamfan")
 	})
 	routes.RouteInit(r.PathPrefix("/api/v1").Subrouter())
 
